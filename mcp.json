@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "ethmumbai-flashloan-vault-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Arbitrum / Ethereum L2",
+        "PROJECT_TICKER": "EMFLASH"
+      },
+      "tools": [
+        {
+          "name": "verify_emflash_invariants",
+          "description": "Verifies deterministic invariants for ETHMumbai Flashloan Vault AI on Arbitrum / Ethereum L2."
+        },
+        {
+          "name": "execute_emflash_action",
+          "description": "Executes authenticated DeFi state transition."
+        }
+      ]
+    }
+  }
+}
